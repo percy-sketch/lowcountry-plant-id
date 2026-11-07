@@ -1,0 +1,184 @@
+[
+  {
+    "id": "sasanqua-camellia",
+    "common": "Sasanqua Camellia",
+    "scientific": "Camellia sasanqua",
+    "aka": ["Fall camellia", "possibly 'Mine-no-yuki' (Snow on the Mountain)"],
+    "type": "Shrub",
+    "native": false,
+    "photo": "photos/sasanqua-camellia.jpg",
+    "added": "2026-11-06",
+    "where": "Home yard",
+    "quickId": [
+      "Glossy evergreen leaves, finely toothed, smaller and narrower than japonica camellia",
+      "Blooms in fall (Oct–Dec), unlike japonicas that bloom mid-winter to spring",
+      "Ruffled white double flowers with yellow center; round green buds"
+    ],
+    "lookalikes": "Japonica camellia: larger, broader leaves; blooms later in winter and spring.",
+    "facts": [
+      "Sasanquas are the fall-blooming camellias.",
+      "'Mine-no-yuki' is a common white double sasanqua in Lowcountry yards."
+    ],
+    "care": "Prune right after blooming in late winter; later pruning removes next fall's buds. Check leaf undersides for tea scale (white fuzzy coating)."
+  },
+  {
+    "id": "crepe-myrtle",
+    "common": "Crepe Myrtle",
+    "scientific": "Lagerstroemia indica",
+    "aka": ["Crape myrtle"],
+    "type": "Tree",
+    "native": false,
+    "photo": "photos/crepe-myrtle.jpg",
+    "added": "2026-11-06",
+    "where": "Home yard",
+    "quickId": [
+      "Multi-trunk vase shape with smooth, peeling, cinnamon-colored bark",
+      "Small oval leaves that turn orange and red in fall",
+      "Summer clusters of crinkled flowers; round seed capsules into winter"
+    ],
+    "lookalikes": "Its smooth, muscular multi-trunks are very distinctive. Few lookalikes in the yard.",
+    "facts": [
+      "Blooms on new growth, so late-winter pruning doesn't cost flowers.",
+      "Topping all trunks at one height (\"crepe murder\") causes knuckles and weak sprouts."
+    ],
+    "care": "Prune mid-Feb to early March. Remove suckers, dead and crossing branches, thin the interior, limb up the trunks. Take no more than about 1/4 of the canopy per year."
+  },
+  {
+    "id": "silver-saw-palmetto",
+    "common": "Silver Saw Palmetto",
+    "scientific": "Serenoa repens (silver form)",
+    "aka": ["Saw palmetto"],
+    "type": "Palm",
+    "native": true,
+    "photo": "photos/silver-saw-palmetto.jpg",
+    "added": "2026-11-07",
+    "where": "Home yard",
+    "quickId": [
+      "Low, clumping fan palm with no tall trunk; trunks creep along the ground",
+      "Silvery blue-green fan-shaped leaves",
+      "Leaf stems lined with small sharp teeth (the \"saw\")"
+    ],
+    "lookalikes": "Blue Mediterranean fan palm: stiffer, more deeply split leaves and short upright trunks. Dwarf palmetto (Sabal minor): smooth stems, greener.",
+    "facts": [
+      "Native to the Southeast coast and tolerant of drought, heat, salt, and sandy soil.",
+      "The silver form is prized in Lowcountry landscaping."
+    ],
+    "care": "Once a year, cut dead brown fronds at the base. Wear gloves. Never remove green fronds."
+  },
+  {
+    "id": "spanish-bayonet",
+    "common": "Spanish Bayonet",
+    "scientific": "Yucca aloifolia",
+    "aka": ["Yucca", "Dagger plant"],
+    "type": "Shrub",
+    "native": true,
+    "photo": "photos/spanish-bayonet.jpg",
+    "added": "2026-11-07",
+    "where": "Home yard",
+    "quickId": [
+      "Rosette of stiff, narrow, dark-green sword-like leaves on a short trunk",
+      "Needle-sharp leaf tips",
+      "Fine saw-toothed leaf edges that feel rough"
+    ],
+    "lookalikes": "Spanish dagger / mound lily (Yucca gloriosa): wider, bluer, flexible leaves with smooth edges and softer tips. Often blooms in fall.",
+    "facts": [
+      "Native along the Southeast coast.",
+      "Tall spikes of creamy white flowers in late spring or early summer.",
+      "Trunks can reach 8–10 ft. Cut pieces root easily."
+    ],
+    "care": "Mind the tips near walkways; clipping the points is fine. Remove dead lower leaves with loppers, long sleeves, and eye protection."
+  },
+  {
+    "id": "waxleaf-ligustrum",
+    "common": "Waxleaf Ligustrum",
+    "scientific": "Ligustrum japonicum",
+    "aka": ["Japanese privet"],
+    "type": "Shrub",
+    "native": false,
+    "invasive": true,
+    "photo": "photos/waxleaf-ligustrum.jpg",
+    "added": "2026-11-07",
+    "where": "Home yard",
+    "quickId": [
+      "Glossy, leathery oval leaves in opposite pairs",
+      "Leaves often a bit wavy or cupped, with a pale midrib",
+      "Blue-black berries in fall and winter"
+    ],
+    "lookalikes": "Yaupon holly has much smaller leaves; sweet olive often has toothed leaves.",
+    "facts": [
+      "One of the most common foundation and hedge shrubs in coastal SC.",
+      "Considered invasive in SC: birds spread its berries.",
+      "Strong-scented white flower clusters in late spring."
+    ],
+    "care": "Light shaping anytime in the growing season, narrower at top than bottom. Hard rejuvenation in late winter. It tolerates a cut to 12–18 in. Pull seedlings."
+  },
+  {
+    "id": "groundsel-tree",
+    "common": "Groundsel Tree",
+    "scientific": "Baccharis halimifolia",
+    "aka": ["Sea myrtle", "Saltbush"],
+    "type": "Shrub",
+    "native": true,
+    "photo": "photos/groundsel-tree.jpg",
+    "added": "2026-11-07",
+    "where": "Salt marsh edge",
+    "quickId": [
+      "Grows on salt marsh edges",
+      "Gray-green leaves; upper leaves narrow",
+      "Females turn silvery-white with fluffy seed tufts in fall"
+    ],
+    "lookalikes": "False willow (Baccharis angustifolia): narrower, willow-like leaves, same marshes and same fall show.",
+    "facts": [
+      "Male and female plants are separate. Only females get fluffy.",
+      "Late flowers feed migrating monarchs.",
+      "Very salt-tolerant and helps stabilize marsh edges. Mildly toxic to livestock."
+    ],
+    "care": "A wild native. Leave it be."
+  },
+  {
+    "id": "giant-cutgrass",
+    "common": "Giant Cutgrass",
+    "scientific": "Zizaniopsis miliacea",
+    "aka": ["Southern wild rice (not true rice)"],
+    "type": "Grass",
+    "native": true,
+    "photo": "photos/giant-cutgrass.jpg",
+    "added": "2026-11-07",
+    "where": "Waccamaw freshwater marsh (old rice field)",
+    "quickId": [
+      "Tall, dense stands of broad, flat grass blades",
+      "Leaf edges are saw-toothed and will cut skin",
+      "Freshwater tidal marsh, often in old rice fields"
+    ],
+    "lookalikes": "Wild rice (Zizania aquatica): soft leaf edges and big airy seed heads in late summer. Cultivated rice doesn't persist in the wild here.",
+    "facts": [
+      "Spreads by thick rhizomes into nearly pure stands.",
+      "A main plant that took over Waccamaw rice fields after cultivation ended.",
+      "Gives cover to marsh birds and wildlife."
+    ],
+    "care": "Wear long sleeves walking through it."
+  },
+  {
+    "id": "bald-cypress",
+    "common": "Bald Cypress",
+    "scientific": "Taxodium distichum",
+    "aka": ["Cypress"],
+    "type": "Tree",
+    "native": true,
+    "photo": "photos/bald-cypress.jpg",
+    "added": "2026-11-07",
+    "where": "Waccamaw River",
+    "quickId": [
+      "Flared, buttressed trunk base, often standing in water",
+      "Cypress \"knees\" poking up around it",
+      "Soft needles that turn rusty-brown and drop in fall (a deciduous conifer)"
+    ],
+    "lookalikes": "Pond cypress (Taxodium ascendens): needles pressed close to twigs, more often in still ponds.",
+    "facts": [
+      "Some Black River cypress are over 2,000 years old.",
+      "Big stumps on the Waccamaw are mostly from logging in the late 1800s and early 1900s.",
+      "The Spanish moss hanging on it is a bromeliad, not a moss, and doesn't harm the tree."
+    ],
+    "care": "A wild native. Enjoy it from the water."
+  }
+]

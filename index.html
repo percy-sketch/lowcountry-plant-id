@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LowCountry Plant ID</title>
+<meta name="theme-color" content="#2f4a3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Plant ID">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<style>
+  :root {
+    --marsh: #2f4a3a;
+    --marsh-2: #3f6250;
+    --sand: #f4efe4;
+    --sand-2: #e9e1cf;
+    --ink: #1f2a24;
+    --muted: #6b766f;
+    --water: #2d5b73;
+    --rust: #b5653a;
+    --good: #3f7d4f;
+    --card: #fffdf8;
+    --radius: 18px;
+    --safe-b: env(safe-area-inset-bottom, 0px);
+    --safe-t: env(safe-area-inset-top, 0px);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--sand); color: var(--ink);
+    display: flex; flex-direction: column;
+  }
+  header {
+    background: var(--marsh); color: var(--sand);
+    padding: calc(14px + var(--safe-t)) 20px 14px;
+    display: flex; align-items: baseline; justify-content: space-between;
+  }
+  header h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 22px; margin: 0; letter-spacing: .2px; }
+  header .count { font-size: 13px; opacity: .8; }
+  main { flex: 1; overflow-y: auto; padding: 18px 16px calc(96px + var(--safe-b)); }
+  .view { display: none; max-width: 560px; margin: 0 auto; }
+  .view.active { display: block; }
+
+  /* Tab bar */
+  nav {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--card); border-top: 1px solid var(--sand-2);
+    display: flex; padding-bottom: var(--safe-b);
+  }
+  nav button {
+    flex: 1; background: none; border: 0; padding: 10px 0 12px;
+    font-size: 12px; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 4px;
+  }
+  nav button svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  nav button.active { color: var(--marsh); font-weight: 600; }
+
+  /* Flashcards */
+  .deck-meta { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .flip { perspective: 1400px; }
+  .flip-inner {
+    position: relative; width: 100%; aspect-ratio: 3 / 4; max-height: 64vh;
+    transition: transform .55s cubic-bezier(.2,.7,.2,1); transform-style: preserve-3d; cursor: pointer;
+  }
+  .flip.flipped .flip-inner { transform: rotateY(180deg); }
+  .face {
+    position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+    border-radius: var(--radius); overflow: hidden; background: var(--card);
+    box-shadow: 0 8px 24px rgba(31,42,36,.14);
+  }
+  .face.front img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .face.front .hint {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 16px;
+    background: linear-gradient(transparent, rgba(0,0,0,.55)); color: #fff; font-size: 15px; text-align: center;
+  }
+  .face.back { transform: rotateY(180deg); padding: 22px 20px; overflow-y: auto; }
+  .face.back h2 { font-family: Georgia, serif; font-size: 26px; margin: 0 0 2px; color: var(--marsh); }
+  .sci { font-style: italic; color: var(--muted); margin-bottom: 12px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tag { font-size: 12px; padding: 3px 10px; border-radius: 999px; background: var(--sand-2); color: var(--ink); }
+  .tag.native { background: #dcebdf; color: var(--good); }
+  .tag.invasive { background: #f6e0d3; color: var(--rust); }
+  h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .8px; color: var(--water); margin: 14px 0 6px; }
+  ul.clues { margin: 0; padding-left: 18px; line-height: 1.45; font-size: 15px; }
+  ul.clues li { margin-bottom: 4px; }
+  p.small { font-size: 14px; line-height: 1.45; margin: 0; }
+
+  .grade { display: flex; gap: 12px; margin-top: 16px; }
+  .btn {
+    flex: 1; border: 0; border-radius: 14px; padding: 15px 10px; font-size: 16px; font-weight: 600;
+    background: var(--marsh); color: var(--sand);
+  }
+  .btn.alt { background: var(--sand-2); color: var(--ink); }
+  .btn.again { background: #efd9cc; color: #7a3b1c; }
+  .btn.good { background: var(--good); color: #fff; }
+  .btn:disabled { opacity: .45; }
+
+  /* Quiz */
+  .quiz-photo { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius); display: block; box-shadow: 0 8px 24px rgba(31,42,36,.14); }
+  .q-prompt { font-family: Georgia, serif; font-size: 20px; margin: 16px 2px 12px; }
+  .choices { display: grid; gap: 10px; }
+  .choice {
+    text-align: left; border: 2px solid var(--sand-2); background: var(--card); border-radius: 14px;
+    padding: 14px 16px; font-size: 16px; color: var(--ink);
+  }
+  .choice.right { border-color: var(--good); background: #e5f1e7; }
+  .choice.wrong { border-color: var(--rust); background: #f8e7dd; }
+  .score { font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; margin-bottom: 10px; }
+  .feedback { margin-top: 12px; font-size: 15px; line-height: 1.45; }
+
+  /* Library */
+  .search {
+    width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--sand-2);
+    background: var(--card); font-size: 16px; margin-bottom: 14px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .tile { background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 3px 10px rgba(31,42,36,.08); border: 0; padding: 0; text-align: left; }
+  .tile img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+  .tile .t { padding: 8px 10px 10px; }
+  .tile .n { font-weight: 600; font-size: 14px; }
+  .tile .s { font-style: italic; font-size: 12px; color: var(--muted); }
+  .tile .lvl { height: 4px; background: var(--sand-2); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+  .tile .lvl i { display: block; height: 100%; background: var(--good); }
+
+  /* Detail sheet */
+  .sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: none; z-index: 10; }
+  .sheet-bg.open { display: block; }
+  .sheet {
+    position: fixed; left: 0; right: 0; bottom: 0; max-height: 92vh; overflow-y: auto; z-index: 11;
+    background: var(--sand); border-radius: 22px 22px 0 0; transform: translateY(100%); transition: transform .3s ease;
+    padding-bottom: calc(24px + var(--safe-b));
+  }
+  .sheet.open { transform: none; }
+  .sheet img { width: 100%; max-height: 50vh; object-fit: cover; display: block; border-radius: 22px 22px 0 0; }
+  .sheet .body { padding: 18px 20px; max-width: 560px; margin: 0 auto; }
+  .sheet h2 { font-family: Georgia, serif; font-size: 26px; margin: 0; color: var(--marsh); }
+  .close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(0,0,0,.5); color: #fff; font-size: 20px; }
+  .meta { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+  .empty { text-align: center; color: var(--muted); padding: 40px 10px; }
+  .done-card { background: var(--card); border-radius: var(--radius); padding: 28px 22px; text-align: center; box-shadow: 0 8px 24px rgba(31,42,36,.1); }
+  .done-card h2 { font-family: Georgia, serif; color: var(--marsh); margin-top: 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>LowCountry Plant ID</h1>
+  <span class="count" id="count"></span>
+</header>
+
+<main>
+  <!-- Flashcards -->
+  <section class="view active" id="view-learn">
+    <div class="deck-meta"><span id="deck-pos"></span><span id="deck-known"></span></div>
+    <div id="learn-area"></div>
+  </section>
+
+  <!-- Quiz -->
+  <section class="view" id="view-quiz">
+    <div id="quiz-area"></div>
+  </section>
+
+  <!-- Library -->
+  <section class="view" id="view-library">
+    <input class="search" id="search" type="search" placeholder="Search plants…" autocomplete="off">
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+
+<nav>
+  <button data-view="learn" class="active">
+    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="16" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v14"/></svg>
+    Flashcards
+  </button>
+  <button data-view="quiz">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><circle cx="12" cy="17.5" r=".6"/></svg>
+    Quiz
+  </button>
+  <button data-view="library">
+    <svg viewBox="0 0 24 24"><path d="M5 21c0-9 5-15 15-17-1 10-6 15-15 17z"/><path d="M5 21c3-5 6-8 10-11"/></svg>
+    My Plants
+  </button>
+</nav>
+
+<div class="sheet-bg" id="sheet-bg"></div>
+<div class="sheet" id="sheet"></div>
+
+<script>
+(() => {
+  let plants = [];
+  const store = {
+    get() { try { return JSON.parse(localStorage.getItem('lcp-progress') || '{}'); } catch { return {}; } },
+    set(v) { try { localStorage.setItem('lcp-progress', JSON.stringify(v)); } catch {} }
+  };
+  let progress = store.get(); // { id: { level: 0-5, seen: n } }
+  const lvl = id => (progress[id] && progress[id].level) || 0;
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+  function tagsHTML(p) {
+    let t = `<span class="tag">${esc(p.type)}</span>`;
+    if (p.native) t += `<span class="tag native">Native</span>`;
+    else t += `<span class="tag">Non-native</span>`;
+    if (p.invasive) t += `<span class="tag invasive">Invasive in SC</span>`;
+    return t;
+  }
+  function detailHTML(p, full) {
+    let h = `<h2>${esc(p.common)}</h2><div class="sci">${esc(p.scientific)}</div>
+      <div class="tags">${tagsHTML(p)}</div>
+      ${p.aka && p.aka.length ? `<p class="small"><b>Also called:</b> ${p.aka.map(esc).join(', ')}</p>` : ''}
+      <h3>How to recognize it</h3><ul class="clues">${p.quickId.map(c => `<li>${esc(c)}</li>`).join('')}</ul>`;
+    if (full) {
+      h += `<h3>Look-alikes</h3><p class="small">${esc(p.lookalikes)}</p>
+        <h3>Good to know</h3><ul class="clues">${p.facts.map(c => `<li>${esc(c)}</li>`).join('')}</ul>
+        <h3>Care</h3><p class="small">${esc(p.care)}</p>
+        <div class="meta">Photographed: ${esc(p.where)} · ${esc(p.added)}</div>`;
+    }
+    return h;
+  }
+
+  /* ---------- Flashcards ---------- */
+  let deck = [], pos = 0;
+  function buildDeck() {
+    // weaker plants appear more often
+    deck = [];
+    plants.forEach(p => { const reps = Math.max(1, 3 - Math.floor(lvl(p.id) / 2)); for (let i = 0; i < reps; i++) deck.push(p); });
+    deck = shuffle(deck);
+    // avoid back-to-back repeats
+    for (let i = 1; i < deck.length; i++) if (deck[i].id === deck[i-1].id) { const j = deck.findIndex((d, k) => k > i && d.id !== deck[i].id); if (j > 0) [deck[i], deck[j]] = [deck[j], deck[i]]; }
+    pos = 0;
+  }
+  function renderLearn() {
+    const known = plants.filter(p => lvl(p.id) >= 3).length;
+    $('#deck-known').textContent = `${known} of ${plants.length} learned`;
+    if (pos >= deck.length) {
+      $('#deck-pos').textContent = '';
+      $('#learn-area').innerHTML = `<div class="done-card"><h2>Deck complete</h2>
+        <p>You've learned ${known} of ${plants.length} plants. Plants you miss come back more often.</p>
+        <div class="grade"><button class="btn" id="again-deck">Shuffle again</button></div></div>`;
+      $('#again-deck').onclick = () => { buildDeck(); renderLearn(); };
+      return;
+    }
+    const p = deck[pos];
+    $('#deck-pos').textContent = `Card ${pos + 1} of ${deck.length}`;
+    $('#learn-area').innerHTML = `
+      <div class="flip" id="card">
+        <div class="flip-inner">
+          <div class="face front"><img src="${esc(p.photo)}" alt="Mystery plant"><div class="hint">What is this? Tap to flip</div></div>
+          <div class="face back">${detailHTML(p, false)}</div>
+        </div>
+      </div>
+      <div class="grade">
+        <button class="btn again" id="b-again" disabled>Missed it</button>
+        <button class="btn good" id="b-good" disabled>Knew it</button>
+      </div>`;
+    const card = $('#card');
+    card.onclick = () => { card.classList.toggle('flipped'); $('#b-again').disabled = $('#b-good').disabled = false; };
+    $('#b-again').onclick = () => grade(p, false);
+    $('#b-good').onclick = () => grade(p, true);
+  }
+  function grade(p, ok) {
+    const cur = progress[p.id] || { level: 0, seen: 0 };
+    cur.seen++; cur.level = ok ? Math.min(5, cur.level + 1) : Math.max(0, cur.level - 2);
+    progress[p.id] = cur; store.set(progress);
+    if (!ok) { const at = Math.min(deck.length, pos + 3); deck.splice(at, 0, p); }
+    pos++; renderLearn(); renderGrid();
+  }
+
+  /* ---------- Quiz ---------- */
+  let qScore = 0, qTotal = 0;
+  function renderQuiz() {
+    if (plants.length < 2) { $('#quiz-area').innerHTML = `<div class="empty">Add at least two plants to start quizzing.</div>`; return; }
+    // favor weaker plants
+    const pool = []; plants.forEach(p => { for (let i = 0; i < 6 - lvl(p.id); i++) pool.push(p); });
+    const ans = pool[Math.floor(Math.random() * pool.length)];
+    const opts = shuffle([ans, ...shuffle(plants.filter(p => p.id !== ans.id)).slice(0, 3)]);
+    $('#quiz-area').innerHTML = `
+      <div class="score"><span>Score: ${qScore} / ${qTotal}</span><span>${qTotal ? Math.round(100 * qScore / qTotal) + '%' : ''}</span></div>
+      <img class="quiz-photo" src="${esc(ans.photo)}" alt="Mystery plant">
+      <div class="q-prompt">Which plant is this?</div>
+      <div class="choices">${opts.map(o => `<button class="choice" data-id="${esc(o.id)}">${esc(o.common)}</button>`).join('')}</div>
+      <div class="feedback" id="fb"></div>`;
+    document.querySelectorAll('.choice').forEach(b => b.onclick = () => {
+      if (document.querySelector('.choice.right')) return;
+      const ok = b.dataset.id === ans.id; qTotal++; if (ok) qScore++;
+      document.querySelectorAll('.choice').forEach(c => { if (c.dataset.id === ans.id) c.classList.add('right'); });
+      if (!ok) b.classList.add('wrong');
+      const cur = progress[ans.id] || { level: 0, seen: 0 };
+      cur.seen++; cur.level = ok ? Math.min(5, cur.level + 1) : Math.max(0, cur.level - 1);
+      progress[ans.id] = cur; store.set(progress); renderGrid();
+      $('#fb').innerHTML = `<b>${ok ? 'Correct!' : 'Not quite.'}</b> <i>${esc(ans.scientific)}</i>. Clue: ${esc(ans.quickId[0])}.
+        <div class="grade"><button class="btn alt" id="q-more">Details</button><button class="btn" id="q-next">Next</button></div>`;
+      $('#q-next').onclick = renderQuiz;
+      $('#q-more').onclick = () => openSheet(ans);
+    });
+  }
+
+  /* ---------- Library ---------- */
+  function renderGrid() {
+    const q = ($('#search').value || '').toLowerCase().trim();
+    const list = plants.filter(p => !q || [p.common, p.scientific, ...(p.aka || []), p.type, p.where].join(' ').toLowerCase().includes(q))
+      .sort((a, b) => a.common.localeCompare(b.common));
+    $('#grid').innerHTML = list.length ? list.map(p => `
+      <button class="tile" data-id="${esc(p.id)}">
+        <img src="${esc(p.photo)}" alt="${esc(p.common)}" loading="lazy">
+        <div class="t"><div class="n">${esc(p.common)}</div><div class="s">${esc(p.scientific)}</div>
+        <div class="lvl"><i style="width:${lvl(p.id) * 20}%"></i></div></div>
+      </button>`).join('') : `<div class="empty" style="grid-column:1/-1">No plants match.</div>`;
+    document.querySelectorAll('.tile').forEach(t => t.onclick = () => openSheet(plants.find(p => p.id === t.dataset.id)));
+  }
+  function openSheet(p) {
+    $('#sheet').innerHTML = `<button class="close" aria-label="Close">×</button><img src="${esc(p.photo)}" alt="${esc(p.common)}"><div class="body">${detailHTML(p, true)}</div>`;
+    $('#sheet').scrollTop = 0;
+    $('#sheet').classList.add('open'); $('#sheet-bg').classList.add('open');
+    $('#sheet .close').onclick = closeSheet;
+  }
+  function closeSheet() { $('#sheet').classList.remove('open'); $('#sheet-bg').classList.remove('open'); }
+  $('#sheet-bg').onclick = closeSheet;
+  $('#search').oninput = renderGrid;
+
+  /* ---------- Tabs ---------- */
+  document.querySelectorAll('nav button').forEach(b => b.onclick = () => {
+    document.querySelectorAll('nav button').forEach(x => x.classList.toggle('active', x === b));
+    document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === 'view-' + b.dataset.view));
+    if (b.dataset.view === 'quiz' && !document.querySelector('.quiz-photo')) renderQuiz();
+    $('main').scrollTop = 0;
+  });
+
+  fetch('plants.json', { cache: 'no-cache' }).then(r => r.json()).then(data => {
+    plants = data;
+    $('#count').textContent = `${plants.length} plants`;
+    buildDeck(); renderLearn(); renderGrid();
+  }).catch(() => { $('#learn-area').innerHTML = `<div class="empty">Couldn't load plants. Check your connection.</div>`; });
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+</script>
+</body>
+</html>
