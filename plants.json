@@ -3,7 +3,10 @@
     "id": "sasanqua-camellia",
     "common": "Sasanqua Camellia",
     "scientific": "Camellia sasanqua",
-    "aka": ["Fall camellia", "possibly 'Mine-no-yuki' (Snow on the Mountain)"],
+    "aka": [
+      "Fall camellia",
+      "possibly 'Mine-no-yuki' (Snow on the Mountain)"
+    ],
     "type": "Shrub",
     "native": false,
     "photo": "photos/sasanqua-camellia.jpg",
@@ -25,7 +28,9 @@
     "id": "crepe-myrtle",
     "common": "Crepe Myrtle",
     "scientific": "Lagerstroemia indica",
-    "aka": ["Crape myrtle"],
+    "aka": [
+      "Crape myrtle"
+    ],
     "type": "Tree",
     "native": false,
     "photo": "photos/crepe-myrtle.jpg",
@@ -47,7 +52,9 @@
     "id": "silver-saw-palmetto",
     "common": "Silver Saw Palmetto",
     "scientific": "Serenoa repens (silver form)",
-    "aka": ["Saw palmetto"],
+    "aka": [
+      "Saw palmetto"
+    ],
     "type": "Palm",
     "native": true,
     "photo": "photos/silver-saw-palmetto.jpg",
@@ -69,7 +76,10 @@
     "id": "spanish-bayonet",
     "common": "Spanish Bayonet",
     "scientific": "Yucca aloifolia",
-    "aka": ["Yucca", "Dagger plant"],
+    "aka": [
+      "Yucca",
+      "Dagger plant"
+    ],
     "type": "Shrub",
     "native": true,
     "photo": "photos/spanish-bayonet.jpg",
@@ -92,7 +102,9 @@
     "id": "waxleaf-ligustrum",
     "common": "Waxleaf Ligustrum",
     "scientific": "Ligustrum japonicum",
-    "aka": ["Japanese privet"],
+    "aka": [
+      "Japanese privet"
+    ],
     "type": "Shrub",
     "native": false,
     "invasive": true,
@@ -116,7 +128,10 @@
     "id": "groundsel-tree",
     "common": "Groundsel Tree",
     "scientific": "Baccharis halimifolia",
-    "aka": ["Sea myrtle", "Saltbush"],
+    "aka": [
+      "Sea myrtle",
+      "Saltbush"
+    ],
     "type": "Shrub",
     "native": true,
     "photo": "photos/groundsel-tree.jpg",
@@ -139,7 +154,9 @@
     "id": "giant-cutgrass",
     "common": "Giant Cutgrass",
     "scientific": "Zizaniopsis miliacea",
-    "aka": ["Southern wild rice (not true rice)"],
+    "aka": [
+      "Southern wild rice (not true rice)"
+    ],
     "type": "Grass",
     "native": true,
     "photo": "photos/giant-cutgrass.jpg",
@@ -162,7 +179,9 @@
     "id": "bald-cypress",
     "common": "Bald Cypress",
     "scientific": "Taxodium distichum",
-    "aka": ["Cypress"],
+    "aka": [
+      "Cypress"
+    ],
     "type": "Tree",
     "native": true,
     "photo": "photos/bald-cypress.jpg",
@@ -180,5 +199,31 @@
       "The Spanish moss hanging on it is a bromeliad, not a moss, and doesn't harm the tree."
     ],
     "care": "A wild native. Enjoy it from the water."
+  },
+  {
+    "id": "japanese-boxwood",
+    "common": "Japanese Boxwood",
+    "scientific": "Buxus microphylla var. japonica",
+    "aka": [
+      "Boxwood",
+      "Littleleaf boxwood"
+    ],
+    "type": "Shrub",
+    "native": false,
+    "photo": "photos/japanese-boxwood.jpg",
+    "added": "2026-11-07",
+    "where": "Home yard (front hedge)",
+    "quickId": [
+      "Small, smooth, oval leaves in opposite pairs along the stem",
+      "Leaf tips rounded, often with a tiny notch; edges never toothed",
+      "Dense, fine-textured shrub that shears into tidy hedges; brighter green than English boxwood"
+    ],
+    "lookalikes": "Japanese holly (Ilex crenata): leaves alternate (not paired) with tiny teeth on the edges. English boxwood: darker, more pointed leaves, struggles in coastal SC heat.",
+    "facts": [
+      "Japanese boxwood handles Southern heat and humidity far better than English boxwood.",
+      "Leaves can turn bronze or yellowish in winter sun and green up in spring.",
+      "Crushed leaves have a faint musky smell some people dislike."
+    ],
+    "care": "Shear lightly in late spring after the first flush of growth, and again in summer if needed. Avoid heavy trimming after September so new growth can harden before cold. Thin a few interior branches now and then so light and air reach the center. Keep mulch off the stems; boxwood hates wet feet."
   }
 ]
