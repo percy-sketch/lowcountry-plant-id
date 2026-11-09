@@ -251,5 +251,31 @@
       "Many varieties grow 10–15 ft if never pruned, far bigger than most people expect."
     ],
     "care": "Prune right after the spring bloom. Shape by cutting individual branches back to a side branch rather than shearing into a ball. It also takes hard rejuvenation pruning well. It likes acidic, well-drained soil; yellowing leaves with green veins usually mean the soil is too alkaline."
+  },
+  {
+    "id": "variegated-english-holly",
+    "common": "Variegated English Holly",
+    "scientific": "Ilex aquifolium 'Argentea Marginata'",
+    "aka": [
+      "Silver-margined holly",
+      "Variegated holly"
+    ],
+    "type": "Shrub",
+    "native": false,
+    "photo": "photos/variegated-english-holly.jpg",
+    "added": "2026-11-09",
+    "where": "Yard bed",
+    "quickId": [
+      "Glossy, wavy leaves with sharp spines along the edges: the classic Christmas holly shape",
+      "Dark green center with a wide creamy-white border",
+      "Purplish tint on young stems and new growth; some leaves come out almost all cream"
+    ],
+    "lookalikes": "'O. Spring' holly: a popular Southern variegated holly with yellow-gold borders and a more upright form. Native American holly (Ilex opaca): plain green, duller leaves with fewer spines.",
+    "facts": [
+      "Holly plants are male or female; only females make red berries, and they need a male holly nearby.",
+      "Variegated leaves have less green to make food, so the plant grows slower than plain green holly.",
+      "English holly prefers cooler summers. In coastal SC it does best with afternoon shade and good drainage."
+    ],
+    "care": "Cut off any branch that reverts to all-green leaves, since it will outgrow the variegated part. Prune lightly in late winter, and save the trimmings for Christmas greenery. Mulch well and water during dry spells. Wear gloves; the spines are sharp."
   }
 ]
