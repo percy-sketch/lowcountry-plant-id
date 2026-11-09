@@ -302,5 +302,31 @@
       "A naturally occurring form of the native sword fern, first found in Boston in the 1890s."
     ],
     "care": "Keep the soil evenly moist and give it bright shade, never hot afternoon sun. Bring it inside or into a garage when nights drop below about 40°F; a frost will kill the fronds. Brown, crispy fronds usually mean it's too dry. Trim them off at the base."
+  },
+  {
+    "id": "live-oak",
+    "common": "Southern Live Oak",
+    "scientific": "Quercus virginiana",
+    "aka": [
+      "Live oak"
+    ],
+    "type": "Tree",
+    "native": true,
+    "photo": "photos/live-oak.jpg",
+    "added": "2026-11-09",
+    "where": "Front yard",
+    "quickId": [
+      "Massive, low, sweeping horizontal limbs, often wider than the tree is tall",
+      "Small, leathery, oblong leaves with smooth edges, dark green on top and grayish underneath, often slightly rolled under",
+      "Evergreen; limbs usually draped in Spanish moss and covered with resurrection fern"
+    ],
+    "lookalikes": "Laurel oak and water oak: taller and more upright, with thinner, shinier leaves and branches that angle upward rather than spreading out. Laurel oak drops most of its leaves in early spring.",
+    "facts": [
+      "Called \"live\" oak because it stays green all year, dropping old leaves only in spring as new ones push out.",
+      "The ferny growth on the upper sides of the limbs is resurrection fern; it curls up brown in dry weather and turns green again after rain.",
+      "Live oaks can live for centuries. Its dense wood framed the hull of the USS Constitution (\"Old Ironsides\").",
+      "South Carolina's state tree is the palmetto, but live oak is the Lowcountry's signature tree."
+    ],
+    "care": "Have an ISA-certified arborist handle any limb work on a tree this size. Avoid piling soil or mulch against the trunk, driving or parking over the root zone, or trenching near it; most damage to old live oaks comes from root disturbance. Spanish moss and resurrection fern don't hurt the tree."
   }
 ]
