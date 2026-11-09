@@ -277,5 +277,30 @@
       "English holly prefers cooler summers. In coastal SC it does best with afternoon shade and good drainage."
     ],
     "care": "Cut off any branch that reverts to all-green leaves, since it will outgrow the variegated part. Prune lightly in late winter, and save the trimmings for Christmas greenery. Mulch well and water during dry spells. Wear gloves; the spines are sharp."
+  },
+  {
+    "id": "boston-fern",
+    "common": "Boston Fern",
+    "scientific": "Nephrolepis exaltata 'Bostoniensis'",
+    "aka": [
+      "Sword fern"
+    ],
+    "type": "Fern",
+    "native": false,
+    "photo": "photos/boston-fern.jpg",
+    "added": "2026-11-09",
+    "where": "Potted, porch",
+    "quickId": [
+      "Long, arching, sword-shaped fronds",
+      "One row of small leaflets on each side of the stem, finely scalloped at the edges",
+      "Thin, wiry, hair-like runners dangling from the plant"
+    ],
+    "lookalikes": "Tuberous sword fern (Nephrolepis cordifolia): stiffer, more upright fronds with small round tubers on the roots; invasive in the Southeast when planted in the ground.",
+    "facts": [
+      "The classic Southern porch fern in hanging baskets.",
+      "The wiry runners root wherever they touch soil and start new plants.",
+      "A naturally occurring form of the native sword fern, first found in Boston in the 1890s."
+    ],
+    "care": "Keep the soil evenly moist and give it bright shade, never hot afternoon sun. Bring it inside or into a garage when nights drop below about 40°F; a frost will kill the fronds. Brown, crispy fronds usually mean it's too dry. Trim them off at the base."
   }
 ]
