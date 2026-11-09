@@ -328,5 +328,57 @@
       "South Carolina's state tree is the palmetto, but live oak is the Lowcountry's signature tree."
     ],
     "care": "Have an ISA-certified arborist handle any limb work on a tree this size. Avoid piling soil or mulch against the trunk, driving or parking over the root zone, or trenching near it; most damage to old live oaks comes from root disturbance. Spanish moss and resurrection fern don't hurt the tree."
+  },
+  {
+    "id": "spanish-moss",
+    "common": "Spanish Moss",
+    "scientific": "Tillandsia usneoides",
+    "aka": [
+      "Graybeard",
+      "Old man's beard"
+    ],
+    "type": "Air plant",
+    "native": true,
+    "photo": "photos/spanish-moss.jpg",
+    "added": "2026-11-09",
+    "where": "Front-yard live oak (outlined in photo)",
+    "quickId": [
+      "Gray, curly, thread-thin strands hanging in long tangled curtains",
+      "Grows on tree limbs (especially live oak and cypress) with no roots in soil",
+      "Strands are made of tiny scaly leaves; turns greener when wet"
+    ],
+    "lookalikes": "Usnea (beard lichen): pale green-gray, stiffer, and shorter, with a stretchy white core inside each strand. Spanish moss strands have no white core.",
+    "facts": [
+      "Not a moss: it's a bromeliad, a relative of the pineapple.",
+      "Takes water and nutrients from rain, fog, and dust; it doesn't feed on the tree.",
+      "Tiny pale-green flowers in late spring are easy to miss.",
+      "Historically gathered, cured, and used to stuff mattresses, furniture, and early car seats."
+    ],
+    "care": "Harmless to healthy trees. Heavy clumps on a weak limb can add weight, but there's no need to remove it. Chiggers can live in moss that has fallen to the ground, so handle it with care."
+  },
+  {
+    "id": "resurrection-fern",
+    "common": "Resurrection Fern",
+    "scientific": "Pleopeltis polypodioides",
+    "aka": [
+      "Resurrection plant"
+    ],
+    "type": "Fern",
+    "native": true,
+    "photo": "photos/resurrection-fern.jpg",
+    "added": "2026-11-09",
+    "where": "Upper side of front-yard live oak limb (outlined in photo)",
+    "quickId": [
+      "Small fern, a few inches tall, growing in mats along the tops of big tree limbs",
+      "Fronds have a single row of short, rounded lobes on each side",
+      "Curls up brown and shriveled in dry weather; flat and green after rain"
+    ],
+    "lookalikes": "Moss or lichen on limbs, when it's curled up dry. After a rain the fern fronds are unmistakable.",
+    "facts": [
+      "Can lose most of its water, look completely dead, and revive within hours of a rain.",
+      "Grows on the bark without feeding on the tree, and is especially common on old live oaks.",
+      "It flew on Space Shuttle Discovery in 1997 so scientists could study its revival in zero gravity."
+    ],
+    "care": "Leave it alone. It doesn't harm the tree. After a rain is the best time to see it."
   }
 ]
