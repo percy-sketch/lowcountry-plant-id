@@ -225,5 +225,31 @@
       "Crushed leaves have a faint musky smell some people dislike."
     ],
     "care": "Shear lightly in late spring after the first flush of growth, and again in summer if needed. Avoid heavy trimming after September so new growth can harden before cold. Thin a few interior branches now and then so light and air reach the center. Keep mulch off the stems; boxwood hates wet feet."
+  },
+  {
+    "id": "loropetalum",
+    "common": "Loropetalum",
+    "scientific": "Loropetalum chinense var. rubrum",
+    "aka": [
+      "Chinese fringe flower",
+      "Fringe flower"
+    ],
+    "type": "Shrub",
+    "native": false,
+    "photo": "photos/loropetalum.jpg",
+    "added": "2026-11-09",
+    "where": "Home yard",
+    "quickId": [
+      "Small, rounded, slightly fuzzy leaves alternating along arching, reddish-brown stems",
+      "New leaves purple or burgundy; older leaves often fade to green, especially in shade",
+      "Pink flowers with narrow, strap-like, ribbony petals, like a frayed tassel"
+    ],
+    "lookalikes": "Green-leaf loropetalum (white flowers) is the same species. Before it blooms, it can resemble cotoneaster or a small-leaf holly, but loropetalum's leaves are softer and slightly fuzzy, with no teeth.",
+    "facts": [
+      "Main bloom is a heavy flush in early spring, with scattered flowers in fall like the one here.",
+      "Leaves on a purple-leaf plant often turn mostly green in shade, in summer heat, or on older growth.",
+      "Many varieties grow 10–15 ft if never pruned, far bigger than most people expect."
+    ],
+    "care": "Prune right after the spring bloom. Shape by cutting individual branches back to a side branch rather than shearing into a ball. It also takes hard rejuvenation pruning well. It likes acidic, well-drained soil; yellowing leaves with green veins usually mean the soil is too alkaline."
   }
 ]
