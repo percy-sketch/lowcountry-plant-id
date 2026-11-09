@@ -1,7 +1,7 @@
 // LowCountry Plant ID service worker
 // Pages and plant data: network first, so new plants show up right away.
 // Photos and icons: cached for offline use in the field.
-const CACHE = 'lcp-v7';
+const CACHE = 'lcp-v8';
 const CORE = ['./', 'index.html', 'plants.json', 'manifest.json', 'icons/icon-192.png'];
 
 self.addEventListener('install', e => {

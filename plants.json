@@ -380,5 +380,30 @@
       "It flew on Space Shuttle Discovery in 1997 so scientists could study its revival in zero gravity."
     ],
     "care": "Leave it alone. It doesn't harm the tree. After a rain is the best time to see it."
+  },
+  {
+    "id": "sea-oats",
+    "common": "Sea Oats",
+    "scientific": "Uniola paniculata",
+    "aka": [
+      "Seaside oats"
+    ],
+    "type": "Grass",
+    "native": true,
+    "photo": "photos/sea-oats.jpg",
+    "added": "2026-11-09",
+    "where": "Beach dunes",
+    "quickId": [
+      "Tall grass (3–6 ft) growing on beach dunes",
+      "Drooping golden seed heads of flat, oat-like spikelets that dangle from the tips of tall stalks",
+      "Long, narrow leaves that roll inward in dry weather"
+    ],
+    "lookalikes": "Bitter panicum (Panicum amarum): bluish-green, wider leaves and airy, narrow seed heads with tiny seeds, no flat dangling spikelets. American beachgrass: stiff, dense spike-like heads; more common farther north.",
+    "facts": [
+      "Its deep, spreading roots trap blowing sand and build and hold the dunes that protect the coast.",
+      "Protected by South Carolina law: it's illegal to pick, cut, or damage sea oats.",
+      "Seed heads ripen golden in late summer and fall and feed birds and other wildlife."
+    ],
+    "care": "Enjoy from the walkovers. Stay off the dunes and never pick the seed heads."
   }
 ]
