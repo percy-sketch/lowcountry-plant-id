@@ -405,5 +405,31 @@
       "Seed heads ripen golden in late summer and fall and feed birds and other wildlife."
     ],
     "care": "Enjoy from the walkovers. Stay off the dunes and never pick the seed heads."
+  },
+  {
+    "id": "lantana",
+    "common": "Lantana",
+    "scientific": "Lantana camara",
+    "aka": [
+      "Shrub verbena",
+      "Ham and eggs"
+    ],
+    "type": "Shrub",
+    "native": false,
+    "photo": "photos/lantana.jpg",
+    "added": "2026-11-10",
+    "where": "Yard bed",
+    "quickId": [
+      "Small, flat-topped clusters of tiny tubular flowers (yellow, orange, pink, red, often changing color as they age)",
+      "Rough, sandpapery, toothed leaves in opposite pairs; pungent smell when crushed",
+      "Clusters of round green berries that ripen glossy black"
+    ],
+    "lookalikes": "Verbena: similar flower clusters but lower-growing, with narrower or more deeply cut leaves. Native buttonsage (Lantana involucrata) has small white-lavender flowers and is more common farther south.",
+    "facts": [
+      "A butterfly magnet that blooms from late spring until frost.",
+      "Leaves and unripe green berries are poisonous to people, pets, and livestock.",
+      "Thrives in heat, drought, sun, and salt spray, so it's a beach-town staple."
+    ],
+    "care": "Frost will knock it back to the ground. Leave the dead stems over winter for protection, then cut it to about 6–12 in. in early spring once new growth appears at the base. Full sun, little water once established, and no need to fertilize. Many named varieties are sterile and don't set berries."
   }
 ]
