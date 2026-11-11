@@ -698,5 +698,32 @@
       "Its roots host bacteria that fix nitrogen, so it thrives in poor soil."
     ],
     "care": "Grows fast and can be shaped as a hedge or limbed up into a multi-trunk small tree. Prune anytime except late summer. It suckers and spreads, so pull unwanted shoots at the base. Older plants can open up and get leggy; cutting a few old trunks to the ground renews it."
+  },
+  {
+    "id": "century-plant",
+    "common": "Century Plant",
+    "scientific": "Agave americana",
+    "aka": [
+      "American agave",
+      "Agave"
+    ],
+    "type": "Succulent",
+    "native": false,
+    "photo": "photos/century-plant.jpg",
+    "added": "2026-11-11",
+    "where": "Yard bed",
+    "quickId": [
+      "Huge rosette of thick, fleshy, blue-gray leaves (3–6 ft long) that often fold or arch over",
+      "Leaf edges lined with hooked teeth; a long, needle-sharp black spine at each tip",
+      "Faint imprints of the teeth from neighboring leaves pressed into the leaf surface"
+    ],
+    "lookalikes": "Spanish bayonet (yucca): thin, stiff, dark-green, sword-like leaves on a trunk, without thick fleshy leaves or hooked edge teeth. Aloe: smaller, softer, not frost-hardy here.",
+    "facts": [
+      "Native to Mexico; despite the name, it blooms after 10–30 years, not 100.",
+      "It blooms once: a flower stalk shoots up 15–25 ft in a few weeks, then the main plant dies, leaving offshoots (\"pups\") around the base.",
+      "Its relatives are used to make tequila and mezcal; its tough leaf fibers were once used for rope.",
+      "The sap can irritate skin."
+    ],
+    "care": "Plant it well away from walkways, since the tip spines can cause serious injuries; some people snip the tips off. Wear gloves, long sleeves, and eye protection when working near it. Pups can be dug up and replanted or given away. Needs sun and sharp drainage; avoid overwatering."
   }
 ]
