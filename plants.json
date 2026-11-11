@@ -618,5 +618,32 @@
       "\"Loblolly\" is an old Southern word for a muddy low spot, where these pines often grow."
     ],
     "care": "Little care needed. Have an arborist check large pines near the house for lightning damage, cracks, or lean. Signs of trouble are browning of whole branches or the whole crown, or pitch tubes (popcorn-like resin blobs) on the bark, which can mean pine beetles."
+  },
+  {
+    "id": "variegated-chinese-privet",
+    "common": "Variegated Chinese Privet",
+    "scientific": "Ligustrum sinense 'Variegatum'",
+    "aka": [
+      "Variegated privet",
+      "Chinese privet"
+    ],
+    "type": "Shrub",
+    "native": false,
+    "invasive": true,
+    "photo": "photos/variegated-chinese-privet.jpg",
+    "added": "2026-11-11",
+    "where": "Yard",
+    "quickId": [
+      "Small oval leaves (1–2 in.) in opposite pairs, gray-green with irregular creamy-white edges",
+      "Thin, arching, twiggy branches forming a loose, airy shrub",
+      "Fuzzy young twigs; small, strong-scented white flowers in spring and blue-black berries"
+    ],
+    "lookalikes": "Waxleaf ligustrum (Ligustrum japonicum): much larger, thicker, glossy leaves, usually solid green. Variegated elaeagnus: silvery speckled leaf undersides and alternate leaves. Variegated boxwood: smaller, stiffer leaves and dense growth.",
+    "facts": [
+      "Plain green Chinese privet is one of the worst invasive shrubs in the Southeast, forming thickets in woods and along streams.",
+      "The variegated form spreads less aggressively, but it often reverts to plain green shoots, and its seedlings can come up all green.",
+      "Birds spread the berries widely."
+    ],
+    "care": "Cut out any all-green shoots as soon as they appear. Shear or thin anytime in the growing season; it takes hard pruning well. Pull seedlings, and consider replacing it with a native shrub."
   }
 ]
