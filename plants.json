@@ -483,5 +483,33 @@
       "The cut branches are a classic Southern Christmas decoration."
     ],
     "care": "Lower branches can sweep the ground; leaving them helps shade the shallow roots and hides the dropped leaves. Grass rarely grows under it. Prune only dead or crossing limbs, in late winter or right after bloom. It needs little else once established."
+  },
+  {
+    "id": "chinese-tallow",
+    "common": "Chinese Tallow Tree",
+    "scientific": "Triadica sebifera",
+    "aka": [
+      "Popcorn tree",
+      "Tallow tree"
+    ],
+    "type": "Tree",
+    "native": false,
+    "invasive": true,
+    "photo": "photos/chinese-tallow.jpg",
+    "added": "2026-11-11",
+    "where": "Yard",
+    "quickId": [
+      "Diamond- or heart-shaped leaves with a long, narrow pointed tip, on long slender leaf stalks",
+      "Leaves flutter like a poplar's and turn brilliant red, orange, and purple in fall",
+      "Clusters of waxy white seeds in fall and winter that look like popcorn"
+    ],
+    "lookalikes": "Eastern redbud: heart-shaped leaves too, but rounder with no drawn-out tip. Cottonwood/poplar: similar fluttering leaves but toothed edges; tallow leaf edges are smooth.",
+    "facts": [
+      "Brought from China in the 1700s for the waxy seed coating, used for candles and soap.",
+      "One of the most invasive trees in the Southeast: birds spread the seeds, and it takes over marsh edges, ditches, and woods.",
+      "Its milky sap, leaves, and seeds are toxic and can irritate skin.",
+      "Banned from sale in South Carolina."
+    ],
+    "care": "Best removed. Pull seedlings when small. For larger trees, cut low and immediately treat the stump with an herbicide labeled for it (or hire a tree service); otherwise it resprouts from the stump and roots. Wear gloves because of the sap."
   }
 ]
