@@ -511,5 +511,32 @@
       "Listed among the worst invasive plants in South Carolina by the SC Exotic Pest Plant Council."
     ],
     "care": "Best removed. Pull seedlings when small. For larger trees, cut low and immediately treat the stump with an herbicide labeled for it (or hire a tree service); otherwise it resprouts from the stump and roots. Wear gloves because of the sap."
+  },
+  {
+    "id": "eastern-red-cedar",
+    "common": "Eastern Red Cedar",
+    "scientific": "Juniperus virginiana",
+    "aka": [
+      "Red cedar",
+      "Southern red cedar (coastal form)"
+    ],
+    "type": "Tree",
+    "native": true,
+    "photo": "photos/eastern-red-cedar.jpg",
+    "added": "2026-11-11",
+    "where": "Yard",
+    "quickId": [
+      "Evergreen foliage of tiny, scale-like leaves pressed along the twigs, with some short prickly needles on young growth",
+      "Reddish-brown bark that peels in long, thin, stringy strips",
+      "Small, frosty blue berry-like cones on female trees; strong cedar scent when foliage is crushed"
+    ],
+    "lookalikes": "Bald cypress: soft, flat, feathery needles in two rows that turn rusty and drop in fall; red cedar stays green all winter. Arborvitae: flat, fan-like sprays of foliage.",
+    "facts": [
+      "Not a true cedar: it's a juniper.",
+      "The fragrant, rot-resistant heartwood is used for cedar chests, closet linings, fence posts, and pencils.",
+      "Birds such as cedar waxwings and bluebirds eat the blue \"berries\" in winter.",
+      "Very tough: handles salt spray, wind, drought, and poor sandy soil."
+    ],
+    "care": "Needs almost nothing. Avoid planting it near apple or crabapple trees, since it hosts cedar-apple rust, a fungus that shows up as orange jelly-like galls in spring. Remove dead lower branches anytime."
   }
 ]
