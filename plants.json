@@ -645,5 +645,31 @@
       "Birds spread the berries widely."
     ],
     "care": "Cut out any all-green shoots as soon as they appear. Shear or thin anytime in the growing season; it takes hard pruning well. Pull seedlings, and consider replacing it with a native shrub."
+  },
+  {
+    "id": "nellie-stevens-holly",
+    "common": "Nellie R. Stevens Holly",
+    "scientific": "Ilex × 'Nellie R. Stevens' (I. aquifolium × I. cornuta)",
+    "aka": [
+      "Nellie Stevens holly"
+    ],
+    "type": "Shrub",
+    "native": false,
+    "photo": "photos/nellie-stevens-holly.jpg",
+    "added": "2026-11-11",
+    "where": "Neighborhood yard",
+    "quickId": [
+      "Large, very glossy, dark green leaves (2–3 in.) with only a few spines, mostly near the tip",
+      "Big clusters of bright orange-red berries in fall and winter",
+      "Grows into a dense, upright, pyramid-shaped tree or tall screen (15–25 ft)"
+    ],
+    "lookalikes": "Native American holly (Ilex opaca): duller, flatter, more evenly spiny leaves. Variegated English holly: cream-edged, very spiny, wavy leaves. Savannah holly: lighter green, narrower leaves.",
+    "facts": [
+      "A hybrid of English holly and Chinese holly, discovered in Maryland in 1900 and named for Nellie Stevens.",
+      "Sets heavy berries even without a male holly nearby, unlike most hollies.",
+      "One of the most popular privacy-screen plants in the South: fast, tough, and evergreen.",
+      "Birds strip the berries in late winter."
+    ],
+    "care": "Prune in late winter, or in December and use the branches as Christmas greenery. A black, sooty film on the leaves usually means tea scale insects on the leaf undersides; horticultural oil sprayed on the undersides controls them. Feed with an acid-loving shrub fertilizer in spring if leaves turn pale."
   }
 ]
