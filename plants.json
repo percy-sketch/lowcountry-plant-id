@@ -564,5 +564,33 @@
       "Fallen fruit can get messy and attract insects."
     ],
     "care": "Remove only fully brown fronds, leaving a few inches of stalk; never cut green fronds. Wear gloves, as the stalks have spines. Yellowing older fronds often mean low potassium or magnesium; a palm fertilizer in spring and summer helps."
+  },
+  {
+    "id": "sweetgum",
+    "common": "Sweetgum",
+    "scientific": "Liquidambar styraciflua",
+    "aka": [
+      "American sweetgum",
+      "Red gum",
+      "Gumball tree"
+    ],
+    "type": "Tree",
+    "native": true,
+    "photo": "photos/sweetgum.jpg",
+    "added": "2026-11-11",
+    "where": "Neighborhood woods",
+    "quickId": [
+      "Glossy star-shaped leaves with 5 (sometimes 7) pointed lobes and finely toothed edges",
+      "Leaves alternate along the twig (maples' are paired); fragrant when crushed",
+      "Spiky round seed balls (\"gumballs\") that hang on the tree and litter the ground"
+    ],
+    "lookalikes": "Red maple: lobed leaves too, but in opposite pairs, with 3 main lobes and coarser teeth, and winged \"helicopter\" seeds instead of gumballs.",
+    "facts": [
+      "Native across the Southeast and among the most colorful fall trees here: yellow, orange, red, and deep purple, often all on one tree.",
+      "Its resin (\"sweet gum\") was once chewed like gum and used in folk medicine.",
+      "Older twigs sometimes grow corky wings.",
+      "Goldfinches and other birds eat the tiny seeds from the gumballs."
+    ],
+    "care": "Tough and low-maintenance. The main nuisance is the spiky gumballs, which roll underfoot and dull mower blades; rake them up in winter and spring. Keep it away from sidewalks and patios, as its surface roots can lift pavement."
   }
 ]
