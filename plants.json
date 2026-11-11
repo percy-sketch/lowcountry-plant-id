@@ -592,5 +592,31 @@
       "Goldfinches and other birds eat the tiny seeds from the gumballs."
     ],
     "care": "Tough and low-maintenance. The main nuisance is the spiky gumballs, which roll underfoot and dull mower blades; rake them up in winter and spring. Keep it away from sidewalks and patios, as its surface roots can lift pavement."
+  },
+  {
+    "id": "loblolly-pine",
+    "common": "Loblolly Pine",
+    "scientific": "Pinus taeda",
+    "aka": [
+      "Old field pine"
+    ],
+    "type": "Tree",
+    "native": true,
+    "photo": "photos/loblolly-pine.jpg",
+    "added": "2026-11-11",
+    "where": "Neighborhood",
+    "quickId": [
+      "Tall, straight trunk with a rounded crown high up; lower trunk often bare",
+      "Needles 6–9 in. long in bundles of 3, slightly twisted, in bushy tufts at branch tips",
+      "Thick bark in reddish-brown scaly plates; prickly brown cones 3–6 in. long"
+    ],
+    "lookalikes": "Longleaf pine: much longer needles (10–18 in.) in big drooping tufts and larger cones (6–10 in.). Slash pine: needles in 2s and 3s, glossy cones. Count needles per bundle and measure cone length.",
+    "facts": [
+      "The most common pine in the Southeast and a mainstay of the timber and paper industry.",
+      "In fall, pines shed their older inner needles, which turn orange-brown before dropping; the tips stay green. That's normal, not disease.",
+      "Fallen needles become pine straw, the classic Southern mulch.",
+      "\"Loblolly\" is an old Southern word for a muddy low spot, where these pines often grow."
+    ],
+    "care": "Little care needed. Have an arborist check large pines near the house for lightning damage, cracks, or lean. Signs of trouble are browning of whole branches or the whole crown, or pitch tubes (popcorn-like resin blobs) on the bark, which can mean pine beetles."
   }
 ]
