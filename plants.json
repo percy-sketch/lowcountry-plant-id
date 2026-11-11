@@ -456,5 +456,32 @@
       "Frost knocks it back, but it often survives Lowcountry winters in sheltered spots."
     ],
     "care": "Don't take any home for a pond, and clean plant bits off boats, kayaks, and trailers before moving to another waterway. Report large infestations to the SC Department of Natural Resources."
+  },
+  {
+    "id": "southern-magnolia",
+    "common": "Southern Magnolia",
+    "scientific": "Magnolia grandiflora",
+    "aka": [
+      "Bull bay",
+      "Magnolia"
+    ],
+    "type": "Tree",
+    "native": true,
+    "photo": "photos/southern-magnolia.jpg",
+    "added": "2026-11-11",
+    "where": "Under the live oaks",
+    "quickId": [
+      "Large, thick, leathery leaves (5–10 in.), glossy dark green on top",
+      "Undersides fuzzy and rusty brown, so from below the tree looks bronze",
+      "Smooth gray bark; huge white fragrant flowers in late spring and summer, then cone-like pods with bright red seeds in fall"
+    ],
+    "lookalikes": "Sweetbay magnolia (Magnolia virginiana): native, smaller leaves with silvery-white undersides instead of rusty brown. Cherry laurel and loquat have smaller or toothed leaves.",
+    "facts": [
+      "Evergreen and native to the Southeast coastal plain; state flower of Mississippi and Louisiana.",
+      "Drops old leaves through the year, especially in spring. Its crunchy leaves are slow to break down.",
+      "Birds, squirrels, and wild turkeys eat the red seeds.",
+      "The cut branches are a classic Southern Christmas decoration."
+    ],
+    "care": "Lower branches can sweep the ground; leaving them helps shade the shallow roots and hides the dropped leaves. Grass rarely grows under it. Prune only dead or crossing limbs, in late winter or right after bloom. It needs little else once established."
   }
 ]
