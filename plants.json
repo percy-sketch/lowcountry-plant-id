@@ -538,5 +538,31 @@
       "Very tough: handles salt spray, wind, drought, and poor sandy soil."
     ],
     "care": "Needs almost nothing. Avoid planting it near apple or crabapple trees, since it hosts cedar-apple rust, a fungus that shows up as orange jelly-like galls in spring. Remove dead lower branches anytime."
+  },
+  {
+    "id": "pindo-palm",
+    "common": "Pindo Palm",
+    "scientific": "Butia odorata",
+    "aka": [
+      "Jelly palm",
+      "Butia palm"
+    ],
+    "type": "Palm",
+    "native": false,
+    "photo": "photos/pindo-palm.jpg",
+    "added": "2026-11-11",
+    "where": "Neighborhood yard",
+    "quickId": [
+      "Feather-shaped (pinnate) fronds that arch strongly and curve back toward the thick trunk",
+      "Blue-gray to silvery-green leaflets in a V along each frond",
+      "Short, stout trunk covered in old leaf-base stubs; spiny leaf stalks"
+    ],
+    "lookalikes": "Sabal (cabbage) palmetto, SC's state tree: fan-shaped leaves, not feathery, on a tall, straight trunk. Canary Island date palm: much bigger, greener, and stiffer fronds on a huge trunk.",
+    "facts": [
+      "Native to southern Brazil and Uruguay; one of the most cold-hardy feather palms, surviving into the teens °F.",
+      "In summer it bears clusters of orange fruit that taste like a mix of pineapple, apricot, and banana and make good jelly, hence \"jelly palm.\"",
+      "Fallen fruit can get messy and attract insects."
+    ],
+    "care": "Remove only fully brown fronds, leaving a few inches of stalk; never cut green fronds. Wear gloves, as the stalks have spines. Yellowing older fronds often mean low potassium or magnesium; a palm fertilizer in spring and summer helps."
   }
 ]
