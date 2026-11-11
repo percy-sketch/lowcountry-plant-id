@@ -671,5 +671,32 @@
       "Birds strip the berries in late winter."
     ],
     "care": "Prune in late winter, or in December and use the branches as Christmas greenery. A black, sooty film on the leaves usually means tea scale insects on the leaf undersides; horticultural oil sprayed on the undersides controls them. Feed with an acid-loving shrub fertilizer in spring if leaves turn pale."
+  },
+  {
+    "id": "wax-myrtle",
+    "common": "Wax Myrtle",
+    "scientific": "Morella cerifera (formerly Myrica cerifera)",
+    "aka": [
+      "Southern bayberry",
+      "Bayberry"
+    ],
+    "type": "Shrub",
+    "native": true,
+    "photo": "photos/wax-myrtle.jpg",
+    "added": "2026-11-11",
+    "where": "Yard",
+    "quickId": [
+      "Narrow, olive-green leaves (2–4 in.), wider near the tip, with a few coarse teeth toward the end",
+      "Leaves crowded toward branch tips in loose whorls; tiny gold dots on both sides",
+      "Spicy, bayberry scent when crushed; clusters of small gray-blue waxy berries on female plants"
+    ],
+    "lookalikes": "Groundsel tree: gray-green, softer leaves with more teeth, and fluffy white seeds in fall; grows right at the marsh edge. Yaupon holly: much smaller, rounder, scalloped leaves with no scent. Crepe myrtle: unrelated despite the name.",
+    "facts": [
+      "Native evergreen across the Lowcountry, tolerant of salt, wet soil, drought, and sand.",
+      "Colonists boiled the waxy berries to make fragrant bayberry candles.",
+      "The berries are a key winter food for yellow-rumped warblers (\"myrtle warblers\") and tree swallows.",
+      "Its roots host bacteria that fix nitrogen, so it thrives in poor soil."
+    ],
+    "care": "Grows fast and can be shaped as a hedge or limbed up into a multi-trunk small tree. Prune anytime except late summer. It suckers and spreads, so pull unwanted shoots at the base. Older plants can open up and get leggy; cutting a few old trunks to the ground renews it."
   }
 ]
