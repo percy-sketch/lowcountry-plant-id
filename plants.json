@@ -431,5 +431,30 @@
       "Thrives in heat, drought, sun, and salt spray, so it's a beach-town staple."
     ],
     "care": "Frost will knock it back to the ground. Leave the dead stems over winter for protection, then cut it to about 6–12 in. in early spring once new growth appears at the base. Full sun, little water once established, and no need to fertilize. Many named varieties are sterile and don't set berries."
+  },
+  {
+    "id": "water-hyacinth",
+    "common": "Water Hyacinth",
+    "scientific": "Pontederia crassipes (formerly Eichhornia crassipes)",
+    "aka": [],
+    "type": "Aquatic",
+    "native": false,
+    "invasive": true,
+    "photo": "photos/water-hyacinth.jpg",
+    "added": "2026-11-11",
+    "where": "Floating on the river",
+    "quickId": [
+      "Floats free on the water in dense mats, not rooted in the bottom",
+      "Thick, glossy, rounded leaves in rosettes",
+      "Swollen, spongy, bulb-like leaf stalks that act as floats; showy lavender flower spikes in summer"
+    ],
+    "lookalikes": "American frogbit (Limnobium spongia): native, smaller heart-shaped leaves with a spongy pad underneath but no swollen stalks. Pickerelweed: native, rooted in the mud along banks, with tall arrow-shaped leaves and blue flower spikes.",
+    "facts": [
+      "Native to South America and considered one of the world's worst aquatic weeds.",
+      "Mats can double in size in a couple of weeks, blocking boats and choking out native plants and fish.",
+      "Listed as a prohibited invasive aquatic plant in South Carolina, so it's illegal to sell, possess, or move it.",
+      "Frost knocks it back, but it often survives Lowcountry winters in sheltered spots."
+    ],
+    "care": "Don't take any home for a pond, and clean plant bits off boats, kayaks, and trailers before moving to another waterway. Report large infestations to the SC Department of Natural Resources."
   }
 ]
