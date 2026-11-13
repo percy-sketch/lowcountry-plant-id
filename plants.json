@@ -725,5 +725,32 @@
       "The sap can irritate skin."
     ],
     "care": "Plant it well away from walkways, since the tip spines can cause serious injuries; some people snip the tips off. Wear gloves, long sleeves, and eye protection when working near it. Pups can be dug up and replanted or given away. Needs sun and sharp drainage; avoid overwatering."
+  },
+  {
+    "id": "asiatic-jasmine",
+    "common": "Asiatic Jasmine",
+    "scientific": "Trachelospermum asiaticum",
+    "aka": [
+      "Asian jasmine",
+      "Dwarf jasmine"
+    ],
+    "type": "Groundcover",
+    "native": false,
+    "photo": "photos/asiatic-jasmine.jpg",
+    "added": "2026-11-13",
+    "where": "Yard bed",
+    "quickId": [
+      "Dense, low evergreen mat of wiry, reddish-brown runners",
+      "Small, glossy, dark green oval leaves (1–2 in.) in opposite pairs",
+      "Pale, silvery-white veins on many leaves, especially newer growth; milky sap when a stem is broken"
+    ],
+    "lookalikes": "Confederate (star) jasmine: same genus, but a climbing vine with larger leaves and fragrant white flowers in spring. Periwinkle (Vinca minor): opposite leaves without pale veins, with blue-purple flowers. English ivy: lobed leaves with aerial rootlets.",
+    "facts": [
+      "The go-to groundcover under Lowcountry live oaks and in shady beds where grass won't grow.",
+      "Very drought-, heat-, and salt-tolerant once established.",
+      "Rarely blooms as a groundcover.",
+      "Spreads aggressively and climbs trunks, fences, and walls if left alone."
+    ],
+    "care": "Mow or string-trim it in late winter (set the mower high) to keep it thick and tidy. Edge it a few times a year so it doesn't creep into lawns, beds, and up trees. Little water or fertilizer needed once established."
   }
 ]
