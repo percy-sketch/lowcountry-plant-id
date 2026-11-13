@@ -752,5 +752,31 @@
       "Spreads aggressively and climbs trunks, fences, and walls if left alone."
     ],
     "care": "Mow or string-trim it in late winter (set the mower high) to keep it thick and tidy. Edge it a few times a year so it doesn't creep into lawns, beds, and up trees. Little water or fertilizer needed once established."
+  },
+  {
+    "id": "confederate-jasmine",
+    "common": "Confederate Jasmine",
+    "scientific": "Trachelospermum jasminoides",
+    "aka": [
+      "Star jasmine"
+    ],
+    "type": "Vine",
+    "native": false,
+    "photo": "photos/confederate-jasmine.jpg",
+    "added": "2026-11-13",
+    "where": "Home fence",
+    "quickId": [
+      "Woody, twining evergreen vine climbing fences, arbors, and trellises",
+      "Glossy, dark green, pointed oval leaves (2–3 in.) in opposite pairs, larger and plainer than Asiatic jasmine's",
+      "Very fragrant white pinwheel-shaped flowers in mid-to-late spring; milky sap"
+    ],
+    "lookalikes": "Asiatic jasmine: same genus but a low groundcover with smaller leaves, often with pale veins, and rarely blooms. Carolina jessamine: the native vine with narrower leaves and yellow trumpet flowers in late winter.",
+    "facts": [
+      "Not a true jasmine; it's in the dogbane family, but its sweet scent earned the name.",
+      "Native to China and Japan, despite the \"Confederate\" name.",
+      "One of the most popular fence and mailbox vines in the South; blooms for several weeks in April–May.",
+      "The milky sap can irritate skin."
+    ],
+    "care": "Prune right after it finishes blooming in late spring; pruning later removes next year's flower buds. Tuck or tie wandering shoots back onto the fence. It tolerates sun or part shade and drought once established; a light spring feeding helps blooming."
   }
 ]
